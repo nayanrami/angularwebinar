@@ -1,1 +1,18 @@
-<input type="text" #mybox (keyup)="mykeyup(mybox.value)" placeholder="value" />
+<div class="container">
+  <br />
+  <input
+    type="text"
+    #mybox
+    (keyup)="mykeyup(mybox.value)"
+    placeholder="value"
+    class="form-control"
+  />
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Two Way Binding"
+    [(ngModel)]="message"
+  />
+
+  Message: {{ message }}
+</div>

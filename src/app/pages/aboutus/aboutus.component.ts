@@ -10,6 +10,8 @@ export class AboutusComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  message = String;
+
   mykeyup(data: String) {
     console.log(data);
   }

@@ -12,5 +12,6 @@ export class ContactusComponent implements OnInit {
   ngOnInit(): void {}
   getFormData(data: NgForm) {
     this.mydata = data;
+    alert('Email Sent...');
   }
 }
